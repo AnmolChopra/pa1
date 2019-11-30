@@ -1,0 +1,16 @@
+<div class="body">
+  <form [formGroup]="addtech" (ngSubmit)="addt()">
+    <label for="username">UserName</label>
+    <input type="text" formControlName="username">
+    <div *ngIf="addtech.controls['username'].invalid && addtech.controls['username'].touched && addtech.controls['username'].dirty">
+        Enter UserName
+      </div>
+
+      <label for="email">Email</label>
+      <input type="email" formControlName="email">
+      <div *ngIf="addtech.controls['email'].invalid && addtech.controls['email'].touched && addtech.controls['email'].dirty">
+          Enter Password
+        </div>
+        <button type="submit">Register</button>
+  </form>
+</div>

@@ -1,0 +1,156 @@
+/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+.body{
+    position: relative;
+    width: 100%;
+}
+.bg{
+    width: 100%;
+    background: url('../../assets/img/module-1-background.jpg');
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 50px;
+}
+.content{
+    width: 65%;
+    background-color: white;
+    opacity: 0.92;
+    /* margin-right: 10%; */
+    padding-left: 8%;
+    padding-top: 5%;
+    padding-right: 8%;
+    padding-bottom: 100px;
+}
+.start{
+    opacity: 1 !important;
+}
+.wel{
+    width: 130px;
+    font-size: 20px;
+    height: 30px;
+    text-align: center;
+    background-color: #1CAFE6;
+    color: white;
+    margin-bottom: 20px;
+}
+.welText{
+    width: 180px;
+    font-size: 20px;
+    height: 30px;
+    text-align: center;
+    background-color: #1CAFE6;
+    color: white;
+    margin-bottom: 20px;
+}
+.wel :hover{
+    cursor: pointer;
+}
+.welText :hover{
+    cursor: pointer;
+}
+.weltext p{
+    font-size: 18px;
+}
+.blueh{
+    background-color: #1CAFE6;
+    width: 450px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.blueh :hover{
+    cursor: pointer;
+}
+.Bottom{
+    width: 100%;
+}
+.Bottom button{
+    /* background-color: #1CAFE6;
+    color: white; */
+    font-size: 15px;
+}
+.bt{
+    margin-right: 85%;
+}
+.vedio{
+    width: 800px;
+    height: 400px;
+    /* background-image: url('../../assets/img/module-1-image-2.jpg'); */
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.pptv{
+    width: 800px;
+    height: 600px;
+    /* background-image: url('../../assets/img/module-1-image-2.jpg'); */
+     margin-bottom: 20px;
+}
+.bluep{
+    background-color: #1CAFE6;
+    width: 500px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.bluep :hover{
+    cursor: pointer;
+}
+.redh{
+    background-color: #F38685;
+    width: 450px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.redh:hover{
+    cursor: pointer;
+}
+.img1{
+    width: 800px;
+    height: 400px;
+    background-image: url('../../assets/img/module-1-image-3.jpg');
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.img2{
+    width: 800px;
+    height: 400px;
+    background-image: url('../../assets/img/module-1-image-4.jpg');
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.img3{
+    width: 800px;
+    height: 400px;
+    background-image: url('../../assets/img/module-1-image-5.jpg');
+    opacity: 1;
+    margin-bottom: 20px;
+}
+fieldset{
+    border: none;
+}
+.wrong{
+    background-color: red;
+    color: white;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+}
+.correct{
+    background-color: green;
+    color: white;
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+}

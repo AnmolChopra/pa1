@@ -1,0 +1,220 @@
+<div class="body">
+  <div class="bg">
+    <div class="content">
+      <div class="start">
+          <h1>Module 1</h1>
+          <div class="blueh">
+            <span>Philosophy and Purpose of the Spiritual Curriculum</span>
+          </div>
+          <div class="mcont" *ngIf='welSec == true'>
+            <div class="wel">
+                <h5>Welcome Video</h5>
+            </div>
+            <div class="vedio">
+              <video width="100%" height="100%" (click)="play()" (timeupdate)="setCurrentTime($event)" #videoPlayer >
+                <source src="../../../assets/img/1 Introduction.ogg" type="video/ogg">
+              </video>
+            </div>
+            <div class="welText" (click)='weltext()'>
+                <h5>Welcome Video : Text</h5>
+            </div>
+            <div class="weltext" *ngIf='welText==true'>
+              <p>The spiritual curriculum is designed to develop a strong ethical and spiritual foundation in students. The course is open to students of all faiths and backgrounds and focuses on how to respect others, and how to get along with others. </p>
+              <p>It also teaches meditation as a way to develop concentration, reduce stress, to know one’s inner self, find inner peace and happiness, and to bring about outer peace. </p>
+              <p>The course teaches life skills that will help students deal with the pressures that might come to their life. Students learn communication and peaceful conflict resolution skills. Through projects in community service, helping people in need, and improving the ecological environment, students develop the concept of using their knowledge to make positive contributions to society. </p>
+              <p>The lessons in the Spiritual Curriculum are designed for use with an interactive teaching technique. Student involvement, class participation, discussion, and cooperative learning are important in the instructional delivery of the course.</p>
+              <p>Enjoy seeing some impressions of the Spiritual Curriculum in action in this PPT that highlights the philosophy and purpose.</p>
+            </div>
+          </div>
+        <div *ngIf="pptSec==true">
+            <div class="bluep" >
+              <span>PTT Philosophy and Purpose of the Spiritual Curriculum </span>
+            </div>
+            <div class="ppt">
+              <div class="pptv">
+                  <slideshow  #slideshow [height]="height"
+                                         [minHeight]="'525px'"
+                                         [autoPlay]="false"
+                                         [showArrows]="true"
+                                         [imageUrls]="imageUrl"
+                                         (onSlideRight)="slide(i=1)">
+                  </slideshow>
+              </div>
+            </div>
+        </div>
+          <div *ngIf="VedioSec==true">
+            <div class="bluep" (click)='peacet()'>
+              <span>Video Introduction to Education of a Peaceful World </span>
+            </div>
+            <div class="vedio"></div>
+            <div class="welText" (click)='videoText()'>
+                <h5> Video : Text</h5>
+            </div>
+            <div class="weltext" *ngIf='videotext==true'>
+              <p>The following talk “Education for a Peaceful World” by Sant Rajinder Singh Ji Maharaj was delivered during his visit to Columbia where he was awarded the Medal of Cultural Merit by the Ministry of Education of Columbia. In his address to the Cabinet of Ministers in June 1990, Maharaj Ji gave a landmark speech outlining his vision of how spiritual education of children could contribute to a peaceful world. The discourse was produced as a booklet. These thoughts laid the building blocks of the Darshan Academy schools and shaped the concept of a new school model.</p>
+              <p>Your next assignment is to read the talk “Education for a Peaceful World” and answer some questions related to the text at the end.</p>
+            </div>
+          </div> 
+          <div *ngIf='textSec==true'>
+            <div class="redh" (click)='PeaceWord()'>
+              <span>Education for a Peaceful World</span>
+            </div>
+            <div class="weltext" >
+              <p>Ministry of Education, Bogota, Colombia <br> June 28, 1990</p>
+              <p>During his 1990 world tour to spread the message of love, peace, and human unity, Sant Rajinder Singh Ji Maharaj was awarded the Medal of Cultural Merit by the Ministry of Education of Columbia. During a private meeting on June 25, 1990, the Minister of Education, asked Sant Rajinder Singh Ji a series of questions about his views on education for physical, intellectual, and spiritual development. He then asked Sant Rajinder Singh Ji to address the Cabinet of Ministers on June 28, 1990, and to respond to their questions. In this historical speech Sant Rajinder Singh Ji Maharaj outlined his views on education. These thoughts shaped the concept of a new school model, Darshan Academy. </p>
+              <p>It is my privilege that you have invited me here to talk to you about my views on education. It is a great responsibility that you have on your shoulders because the Ministry of Education in any country is entrusted with one of the noblest and most important tasks in the government - educating the future citizens of the nation and of the world. Whatever policies you set, whatever new programs you institute will affect the lives of millions of people throughout the country and the world. The fruits of your policies will be reaped twenty and thirty years from now when the students grow up and become the future leaders of society. When you have such an onerous responsibility on your shoulders, it is important that each of you look deeply into your hearts and souls to do the best that you can.</p>
+              <p>In the past, educators all over the world have placed tremendous stress on the intellectual and the physical development of students. The result is that we have turned out human beings who are physically and intellectually superior to our predecessors. The amount of knowledge that we are gaining today is doubling at a much faster rate than it did previously. About two centuries ago, the knowledge available to the general public used to double in one century. But according to research done in 1986, studies have shown that knowledge is now doubling every five years. There is so much research in all areas that we are exposed to a greater amount of information now than we were just a few years ago. This information explosion has led us to become more and more involved in a materialistic way of life. </p>
+              <p>As we grow older, we have the responsibility of our children on our shoulders. We spend time wondering about the best way to raise our children so that they will grow up to become better human beings than we are. We want them to have an easier time in their lives than we had. We find ourselves preoccupied in making a living and raising our children. We lead such busy lives that we have little time for leisure. As we get older and life begins to pass us by, we begin to question, "Is the purpose of life only to be born, grow old, and die? Or is there something else?"</p>
+              <p>In the East, people believe that human beings have three aspects which need to be developed. There should be intellectual development, physical development and there should also be development on the spiritual side. Unfortunately, we have forgotten about the spiritual aspect, while we have developed tremendously on the intellectual and the physical sides of life. Whether one is from the East or the West, the common belief is that we all have a soul in the body, and the soul is the power that enlivens us. It is believed that when the soul leaves the body for good, a person dies. Thus, during this lifetime, when we have been lucky enough to receive the human body, if we do not spend the time to develop spiritually we will not achieve our full potential. To bring about the right balance in life, we also have to lay stress on the spiritual aspect of education.</p>
+              <div class="img1"></div>
+              <p>Spirituality deals with developing the higher values of life and with becoming a better person. Spirituality means inculcating love in our hearts for all humanity, irrespective of skin colour, religion, or nationality, irrespective of whether a person is rich or poor, or from the East or the West. If everyone would start seeing the Light of God in all people, this would bring peace and harmony to the world. Once we realize that our soul is a part of God, and that part is the same in each human being - and not only in human beings but in all living creatures - we will not want to harm anyone. We will then start to see the goodness in everyone. We will begin to think about the welfare of others. We will also be concerned about the ecology of the world. We will stop destroying our forests, our air, our water, and all of nature which God has given to us for our life here on earth. When we destroy anything that we have received, when we take so much from the soil for our sustenance yet pollute the land instead of trying to rejuvenate it, we are harming the whole world. The universes have been created in perfect harmony. There is so much lost when we do not take proper care of nature. If we do not take proper care of ourselves, whether it be physically, intellectually, or spiritually, it affects our life in this universe.</p>
+              <p>To develop our spiritual side it is important to start the basic moral instruction about spirituality at an early age. It is easy for a child to gain knowledge. Research has shown that children can learn faster and can learn more languages than grownups. If we can include some spiritual teachings in our educational systems throughout the world, then fifteen, twenty, or twenty-five years from now, we will turn out human beings who would have love and compassion in their hearts for other human beings. This would bring about an era in which people would try to help each other rather than accumulate as much as they can for themselves. We will see that with time we will enter into a golden age in which we will be concerned about the welfare of our neighbours, the welfare of our society, and the welfare of all life on a global level.</p>
+              <p>It is important that the spiritual and ethical values of life are taught properly. We can develop spiritually through a process of meditation. Through meditation we not only develop the higher human values, but we also realize our true selves and gain knowledge about the soul in our body. </p>
+              <p>Meditation is another form of concentration. The process of meditation is one in which we close our eyes and try to enter the inner realms. God is within each of us. The human body is the highest form of all creation and the holiest of the temples and churches because it was not made by any human hand; it was made by the hand of God Himself. To practice spirituality does not require any religious conversion. Spirituality is a science that can be practiced by a member of any religion, and even by those who do not belong to any religion. It is not necessary for people to convert from one religion to another. We do not believe in any conversion; we believe instead in "inversion." This means that we invert our attention to go within. When we do so, we will find the Light of God and the Music of the Spheres. Contact with this current of divinity within us brings us peace and joy</p>
+              <div class="img2"></div>
+              <p>There are different kinds of meditation techniques being practiced throughout the world. There are different methods of yoga that are taught. Many of them aim to develop only the physical aspect. Some of them require that very strenuous postures be maintained. But meditation on the Light and Sound Current is a practical method which is easy to do and can be practiced by a small child or an elderly person, by a person who is sick or a person who is healthy. It requires no difficult postures and no strenuous exercises.</p>
+              <p>In addition to realizing our self and the creative power within us, there are many benefits to meditation which help us in our day-to-day life. By meditating for some time every day the first thing that happens to us is that our concentration improves tremendously. Meditation is another name for concentration. During meditation we close our eyes and look within. What we are actually doing is concentrating our attention to see what lies in front of us.</p>
+              <p>One hindrance in meditation is that our mind will always try to take us away from our concentration. The technique of stilling the mind that we learn in order to meditate helps us not only to connect ourselves with the Light and Sound within, but also to improve our concentration. Our mind is a strong entity and is always trying to engross us in the outer material world. If we can still the mind by the process of concentration, we can use that technique in our day-to-day life. Then we will understand more of what we read. We will complete any work we are doing much faster because we would have developed the techniques of focusing our attention. Students will do better in their studies because of improved concentration.</p>
+              <p>Besides improving our intellectual abilities through meditation, we will also feel better physically. When we are sitting in meditation, we feel more physically relaxed. We do not become overly agitated, and our response to problems will be more tension free. We become more able to cope with the day-to-day tensions of our work life much easier.</p>
+              <p>If the techniques for meditation and concentration are taught to students at an early age, then by the time they grow up, they will be more fully developed physically, intellectually, and spiritually. They will start seeing the inner Light in every human being, and even beyond that, in every form of creation. This will bring about more love and compassion in their hearts for all humanity. </p>
+              <p>Education is a means by which we train children to deal with the problems of life. We say that "this person is an engineer," "this person is a doctor," or "this person is an architect." Even though people have learned those professions, the basic elements which any educational program should teach students are to grow up to be better human beings and to be able to cope with the problems and difficulties they are going to face in life. Children have to be taught right from wrong. They have to be taught how to make good decisions. If we can teach children to make decisions properly, then when a problem arises in life, they will make the right choice. We also need to teach children that their decisions not only affect them, but they affect many other human beings all around them. If all of us start making good decisions, we will be moving in a direction which will benefit everyone. </p>
+              <p>Along with being able to make a good intellectual decision, along with being allowed to make a good physical decision, we have to learn to make good spiritual decisions. What do we have to learn in life that will help us? We need to learn that if we have love in our hearts for everyone, then we will have a society in which people would behave as if others were members of their own family. If along with the intellectual and physical traits, the spiritual traits can be taught to children, then this world will become a haven of joy and peace.</p>
+              <div class="img3"></div>
+            </div>
+          </div>
+            <div *ngIf="mcqSec == true">
+              <div class="redh" (click)='MCQ()'>
+                  <span>MCQs</span>
+              </div>
+              <div class="mcq" >
+              <div>
+                <h3>A) Life and consciousness is being given to us by our</h3>
+                <fieldset formcontrolName='ans1' (change)='ans1($event.target.value)'[disabled]='disabledValue'>
+                <input type="radio" name="quesA" id="" value="body" >Body <br>
+                <input type="radio" name="quesA" id="" value="mind" >Mind <br>
+                <input type="radio" name="quesA" id="" value="emotions" >Emotions <br>
+                <input type="radio" name="quesA" id="" value="soul" >Soul
+              </fieldset>
+                <div *ngIf='mcqff==true'>
+                <h5 *ngIf='mcqf==false' class='wrong'>Incorrect</h5>
+                <h5 *ngIf='mcqf==true' class="correct">Correct</h5>
+              </div>
+              </div>
+              <div>
+                <h3>B) To practice spirituality, we need to</h3>
+                <fieldset formcontrolName='ans2' (change)='ans2($event.target.value)' >
+                <input type="radio" name="quesb" id="" value="Convert our religion" >Convert our religion <br>
+                <input type="radio" name="quesb" id="" value="Invert the attention to go within">Invert the attention to go within <br>
+                <input type="radio" name="quesb" id="" value="Go to a remote place" >Go to a remote place <br>
+                <input type="radio" name="quesb" id="" value="Leave our study or job" >Leave our study or job
+                </fieldset>
+                <div *ngIf='mcqff1==true'>
+                  <h5 *ngIf='mcqf1==false' class="wrong">Incorrect</h5>
+                  <h5 *ngIf='mcqf1==true' class ="correct">Correct</h5>
+                </div>
+              </div>
+              <div>
+                <h3>C) Human beings should be given basic instructions about spirituality </h3>
+                <fieldset formcontrolName='ans3' (change)='ans3($event.target.value)' >
+                <input type="radio" name="quesc" id="" value="At an early age" >At an early age <br>
+                <input type="radio" name="quesc" id="" value="At middle age">At middle age <br>
+                <input type="radio" name="quesc" id="" value="After retirement" >After retirement <br>
+                <input type="radio" name="quesc" id="" value="During  unhappy times" >During  unhappy times
+                </fieldset>
+                <div *ngIf='mcqff2==true'>
+                  <span *ngIf='mcqf2==false'>Incorrect</span>
+                  <span *ngIf='mcqf2==true'>Correct</span>
+                </div>
+              </div>
+              <div>
+                <h3>D) ‘Attaining peace’ is a natural by-product of our</h3>
+                <fieldset formcontrolName='ans4' (change)='ans4($event.target.value)' >
+                <input type="radio" name="quesd" id="" value="Physical development" >Physical development <br>
+                <input type="radio" name="quesd" id="" value="Intellectual development">Intellectual development <br>
+                <input type="radio" name="quesd" id="" value="Emotional development" >Emotional development <br>
+                <input type="radio" name="quesd" id="" value="Spiritual development" >Spiritual development
+                </fieldset>
+                <div *ngIf='mcqff3==true'>
+                  <span *ngIf='mcqf3==false'>Incorrect</span>
+                  <span *ngIf='mcqf3==true'>Correct</span>
+                </div>
+              </div>
+              <div>
+                <h3>E) Meditation can be practiced only by</h3>
+                <fieldset formcontrolName='ans5' (change)='ans5($event.target.value)' >
+                <input type="radio" name="quese" id="" value="Elderly person" >Elderly person <br>
+                <input type="radio" name="quese" id="" value="Healthy person">Healthy person <br>
+                <input type="radio" name="quese" id="" value="Religious person" >Religious person <br>
+                <input type="radio" name="quese" id="" value="Everyone" >Everyone
+                </fieldset>
+                <div *ngIf='mcqff4==true'>
+                  <span *ngIf='mcqf4==false'>Incorrect</span>
+                  <span *ngIf='mcqf4==true'>Correct</span>
+                </div>
+              </div>
+              <div>
+                <h3>F) Meditation is helpful in one’s intellectual development as it leads to improved</h3>
+                <fieldset formcontrolName='ans6' (change)='ans6($event.target.value)' >
+                <input type="radio" name="quesf" id="" value="Scripture reading" >Scripture reading <br>
+                <input type="radio" name="quesf" id="" value="Prayer recitation">Prayer recitation <br>
+                <input type="radio" name="quesf" id="" value="Concentration" >Concentration <br>
+                <input type="radio" name="quesf" id="" value="Mantra Chanting" >Mantra Chanting
+                </fieldset>
+                <div *ngIf='mcqff5==true'>
+                  <span *ngIf='mcqf5==false'>Incorrect</span>
+                  <span *ngIf='mcqf5==true'>Correct</span>
+                </div>
+              </div>
+              <div>
+                <h3>G) Meditation rejuvenates us by</h3>
+                <fieldset formcontrolName='ans7' (change)='ans7($event.target.value)' >
+                <input type="radio" name="quesg" id="" value="Making us practice difficult postures" >Making us practice difficult postures <br>
+                <input type="radio" name="quesg" id="" value="Busting stress and making us relaxed">Busting stress and making us relaxed <br>
+                <input type="radio" name="quesg" id="" value="Giving us knowledge of herbs and medicines" >Giving us knowledge of herbs and medicines <br>
+                <input type="radio" name="quesg" id="" value="None of the above" >None of the above
+                </fieldset>
+                <div *ngIf='mcqff6==true'>
+                  <span *ngIf='mcqf6==false'>Incorrect</span>
+                  <span *ngIf='mcqf6==true'>Correct</span>
+                </div>
+              </div>
+              <div>
+                <h3>H) The basic aim of education is to make a person</h3>
+                <fieldset formcontrolName='ans8' (change)='ans8($event.target.value)' >
+                <input type="radio" name="quesh" id="" value="An engineer" >An engineer <br>
+                <input type="radio" name="quesh" id="" value="A doctor">A doctor <br>
+                <input type="radio" name="quesh" id="" value="An architect" >An architect <br>
+                <input type="radio" name="quesh" id="" value="A better human being who can deal with the problems of life." >A better human being who can deal with the problems of life.
+                </fieldset>
+                <div *ngIf='mcqff7==true'>
+                  <span *ngIf='mcqf7==false'>Incorrect</span>
+                  <span *ngIf='mcqf7==true'>Correct</span>
+                </div>
+              </div>
+              <div>
+                <h3>I)  We should teach children to make</h3>
+                <fieldset formcontrolName='ans9' (change)='ans9($event.target.value)' >
+                <input type="radio" name="quesi" id="" value="Fool of others" >Fool of others <br>
+                <input type="radio" name="quesi" id="" value="Fun of others">Fun of others <br>
+                <input type="radio" name="quesi" id="" value="Good decisions that will be beneficial for everyone" >Good decisions that will be beneficial for everyone <br>
+                <input type="radio" name="quesi" id="" value="Other people work for us" >Other people work for us
+                </fieldset>
+                <div *ngIf='mcqff8==true'>
+                  <span *ngIf='mcqf8==false'>Incorrect</span>
+                  <span *ngIf='mcqf8==true'>Correct</span>
+                </div>
+              </div>    
+            </div>
+          </div>
+          <div *ngIf="assSec == true">
+            <div class="bluep"> Assignment:Read these inspiring quotes on education</div>
+          </div>    
+          <div class="Bottom">
+            <button class="bt" (click)='prev()'>Previous</button>
+            <button  (click)='next()'>Next</button>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>

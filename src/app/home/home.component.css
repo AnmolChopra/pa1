@@ -1,0 +1,72 @@
+.body{
+    margin-top: 0px;
+    width: 100%;
+    position: relative;
+}
+.upbody{
+    width: 100%;
+    height: 400px;
+    background-image: url('../../assets/img/800x400-trainingcourse-modules-banner.jpg');
+}
+.rightsec{
+    width: 45%;
+    height: 100%;
+    float: right;
+    background-color: white;
+}
+.rightsec .blank{
+    width: 100%;
+    background-color: #dddddd98;
+    height: 10px;
+}
+.rightsec h4{
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 20px;
+}
+.rightsec h3{
+    margin-left: 10%;
+    font-size: 30px;
+}
+.rightsec h2{
+    margin-top: -5%;
+    margin-left: 10%;
+    font-size: 45px;
+}
+.rightsec button{
+    margin-left: 10%;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    height: 35px;
+    width: 150px;
+    background-color: #1BA8DD;
+    color: white;
+}
+.bot{
+    width: 100%;
+    height: 300px;
+    background-color: #66C05B;
+    position: relative;
+}
+.bot h2{
+    position: absolute;
+    padding-top: 3%;
+    font-size: 50px;
+    padding-left: 15%;
+    color: white;
+    font-weight: 100;
+    width: 50%
+}
+.bot button{
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 10%;
+    color: #66C05B;
+    background-color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    width: 350px;
+    height: 50px;
+}

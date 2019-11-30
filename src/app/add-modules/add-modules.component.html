@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form [formGroup]='addModule' (ngSubmit)='add()'>
+    <input type="text" name="" id="" placeholder="Module Name" formControlName="moduleName"> <br>
+    <input type="tel" formControlName="no" placeholder="Module No"> <br>
+    <label >Moudle Icon</label>
+    <input type="file" accept="image/png" (change)="onSubmitEvent($event)"> <br>
+    <select name="" id="" formControlName="style">
+      <option value="" disabled selected> --Select BackGround Style-- </option>
+      <option value="Blue">Blue</option>
+      <option value="Green">Green</option>
+      <option value="Orange">Orange</option>
+      <option value="Purpule">Purpule</option>
+      <option value="DarkBlue">Dark Blue</option>
+      <option value="Red">Red</option>
+    </select> <br>
+    <!-- <label >Module Itroduction Video</label>
+    <input type="file" (change)="video($event)"> <br> -->
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

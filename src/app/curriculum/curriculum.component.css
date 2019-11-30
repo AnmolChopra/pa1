@@ -1,0 +1,91 @@
+.body{
+    position: relative;
+}
+.container{
+    width: 100%;
+    padding: 50px;
+}
+.row{
+    width: 100%;
+    height: 250px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.Blue{
+    height: 215px;
+    background-color: #46BDEA;
+    width: 200px;
+    padding-top: 1%;
+    text-align: center;
+}
+.img1{
+    background-image: url('../../assets/img/icons_1.png');
+    height: 70px;
+    width: 60px;
+    /* margin-top: 20%; */
+    margin-left: 15%;
+}
+.circle{
+    background-color: white;
+    border-radius: 50%;
+    height: 75px;
+    width: 90px;
+    margin-left: 25%;
+    padding-top: 8%;
+}
+.Green{
+    height: 215px;
+    background-color: #92CE81;
+    width: 200px;
+    padding-top: 1%;
+    text-align: center;
+}
+.img2{
+    background-image: url('../../assets/img/icons_2.png');
+    height: 70px;
+    width: 60px;
+    /* margin-top: 20%; */
+    margin-left: 15%;
+}
+.col-2{
+    margin-left: 20%;
+    margin-top: -229px;
+}
+.Orange{
+    height: 215px;
+    background-color: #F4BB51;
+    width: 200px;
+    padding-top: 1%;
+    text-align: center;
+}
+.img3{
+    background-image: url('../../assets/img/icons_3.png');
+    height: 70px;
+    width: 60px;
+    /* margin-top: 20%; */
+    margin-left: 15%;
+}
+.col-3{
+    margin-left: 40%;
+    margin-top: -229px;
+}
+.Purpule{
+    height: 215px;
+    background-color: #CA8BBC;
+    width: 200px;
+    padding-top: 1%;
+    text-align: center;
+}
+.img4{
+    background-image: url('../../assets/img/icons_4.png');
+    height: 70px;
+    width: 60px;
+    /* margin-top: 20%; */
+    margin-left: 15%;
+}
+.col-4{
+    margin-left: 60%;
+    margin-top: -229px;
+}

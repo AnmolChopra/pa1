@@ -1,0 +1,72 @@
+<div class="body">
+  <div>
+    <form [formGroup]="Addtopic">
+      <select name="" id="" formControlName="moduleName" (change)="trueEvent($event.target.value)">
+        <option [value]="r.moduleName" *ngFor="let r of moduleData" >{{r.moduleName}}</option>
+      </select> <br>
+      <div *ngIf="downForm == true">
+        <div *ngIf="resStat == false">
+            <label >Module Itroduction Video</label>
+            <input type="file" accept="video/*" (change)="video($event)">
+        </div>
+        <div>
+          <fieldset (change)='valueType($event.target.value)'>
+            <input type="radio" name="ValueType" id="" value="new">New
+            <input type="radio" name="ValueType" id="" value="old">Existing
+          </fieldset>
+        </div>
+        <div *ngIf='newV == true'>
+          <input type="text" placeholder="No." formControlName="topicNo">
+          <input type="text" placeholder="Topic Name" formControlName="topicName">
+          <select name="" id="" formcontrolName="topicType" (change)="topicType($event.target.value)">
+            <option value="" disabled selected>-- Select --</option>
+            <option value="ppt">PPT</option>
+            <option value="doc">doc</option>
+            <option value="mcq">mcq</option>
+            <option value="video">video</option>
+          </select>
+        </div>
+        <div *ngIf='ppt == true'>
+            <label >Add The PPT</label>
+            <input type="file" accept=" " (change)="ppt($event)">
+        </div>
+        <div *ngIf="mcq == true">
+          <div>
+            <button (click)="addMcq()">+</button>
+          </div >
+          <div formArrayName="MCQ" *ngFor="let d of Addtopic.get('MCQ').controls; let i = index">
+            <div [formGroupName]="i">
+                <div>
+                    <label for="">Q:</label>
+                    <input type="text" name="" [id]="no+i" formControlName="no">
+                    <input type="text" name="" [id]="ques+1" formControlName='Ques'> <br>
+                    <label for="" [id]="A+i">A</label>
+                    <input type="text" [id]="option1+i" formControlName='option1'> <br>
+                    <label for="" [id]="B+i">B</label>
+                    <input type="text" [id]="option2+i" formControlName='option2'> <br>
+                    <label for="" [id]='C+i'>C</label>
+                    <input type="text" [id]="option3+i" formControlName='option3'> <br>
+                    <label for="" [id]="D+i">D</label>
+                    <input type="text" [id]="option4+i" formControlName='option4'> <br>
+                    <fieldset formControlName='CorrectOption'>
+                      <input type="radio" name="true" [id]="1+i" value="option1"> A <br>
+                      <input type="radio" name="true" [id]="2+i" value="option2"> B <br>
+                      <input type="radio" name="true" [id]="3+i" value="option3"> C <br>
+                      <input type="radio" name="true" [id]="4+i" value="option4"> D
+                    </fieldset>
+                    <button (click)="removeMcq(i)" *ngIf="Addtopic.get('MCQ').length>1">-</button>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="videoF == true">
+            <label >Add The video</label>
+            <input type="file" accept="video/*" (change)="video($event)">
+        </div>
+        <!-- <div class="form-group">
+          <quill-editor formControlName="doc"></quill-editor>
+        </div> -->
+      </div>
+    </form>
+  </div>
+</div>
